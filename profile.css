@@ -1,0 +1,246 @@
+/* *{ box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{ 
+background-color: antiquewhite;
+}
+
+.main-parent{ 
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+
+#left-section{ 
+    display: grid;
+    justify-items: center;
+      align-content: center;
+    gap: 2rem;
+   } */
+
+
+
+
+
+
+
+
+   /* Reset default browser spacing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+}
+
+/* Creates the two main columns */
+.main-parent {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* ---------------- LEFT SECTION ---------------- */
+
+#left-section {
+    background-color: white;
+    padding: 60px 25px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: center;
+    row-gap: 38px;
+}
+
+.main-picture {
+    margin: 0;
+}
+
+#photo {
+    display: block;
+    width: 265px;
+    height: 265px;
+    object-fit: cover;
+}
+
+.name-class {
+    width: min(100%, 360px);
+}
+
+.name-class h1 {
+    font-family: "Courier New", monospace;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+
+.job-title {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+#email-button {
+    width: 265px;
+}
+
+.email-btnnn {
+    width: 100%;
+    min-height: 47px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.email-btnnn:hover {
+    background-color: #333;
+}
+
+.socialmedia-class {
+    width: 265px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.socialmedia-class a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialmedia-class img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+/* ---------------- RIGHT SECTION ---------------- */
+
+#right-section {
+    background-color: #eef1f3;
+    padding: 60px 8%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.description-of-me {
+    width: 100%;
+    max-width: 540px;
+    text-align: center;
+}
+
+.description-head {
+    font-size: 56px;
+    font-weight: 400;
+    margin-bottom: 45px;
+}
+
+.description-head::before {
+    content: "</";
+}
+
+.description-head::after {
+    content: ">";
+}
+
+.description-para {
+    font-size: 18px;
+    line-height: 1.55;
+}
+
+.right-buttons-class {
+    width: 100%;
+    max-width: 515px;
+    margin-top: 125px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 72px;
+}
+
+.resume-button-class,
+.portfolio-button-class {
+    min-height: 47px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.resume-button-class:hover,
+.portfolio-button-class:hover {
+    background-color: #333;
+}
+
+/* ---------------- MOBILE DESIGN ---------------- */
+
+@media (max-width: 800px) {
+    .main-parent {
+        grid-template-columns: 1fr;
+    }
+
+    #left-section,
+    #right-section {
+        min-height: 100vh;
+        padding: 60px 25px;
+    }
+
+    #photo {
+        width: 220px;
+        height: 220px;
+    }
+
+    .name-class {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .name-class h1 {
+        font-size: 25px;
+    }
+
+    .job-title {
+        font-size: 18px;
+    }
+
+    .description-head {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .description-para {
+        font-size: 16px;
+    }
+
+    .right-buttons-class {
+        margin-top: 55px;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+
+
