@@ -94,6 +94,10 @@ body {
     width: 265px;
 }
 
+#greet{ 
+    display: none;
+}
+
 .email-btnnn {
     width: 100%;
     min-height: 47px;
